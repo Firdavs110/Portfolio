@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firdavs Shop</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Firdavs<span>Shop</span></div>
+
+    <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Mahsulot qidiring...">
+        <button id="searchBtn">🔍</button>
+    </div>
+
+    <button id="cartBtn" class="cart-btn">🛒 Savat <b id="cartCount">0</b></button>
+</header>
+
+<section class="hero">
+    <div>
+        <p class="small-title">YANGI KOLLEKSIYA</p>
+        <h1>Zamonaviy mahsulotlar<br>bir joyda 🛍️</h1>
+        <p>O'zingizga kerakli mahsulotni toping va savatga qo'shing.</p>
+        <a href="#products" class="hero-btn">Mahsulotlarni ko'rish</a>
+    </div>
+    <div class="hero-emoji">🛍️</div>
+</section>
+
+<main id="products" class="container">
+    <div class="section-top">
+        <div>
+            <p class="small-title">DO'KON</p>
+            <h2>Mahsulotlar</h2>
+        </div>
+
+        <select id="categorySelect">
+            <option value="all">Barcha kategoriyalar</option>
+            <option value="electronics">Elektronika</option>
+            <option value="fashion">Kiyim</option>
+            <option value="accessories">Aksessuar</option>
+        </select>
+    </div>
+
+    <div id="productsList" class="products"></div>
+    <p id="emptyMessage" class="empty">Mahsulot topilmadi 😕</p>
+</main>
+
+<div id="cartModal" class="modal">
+    <div class="modal-box">
+        <button id="closeCart" class="close">×</button>
+        <h2>🛒 Savat</h2>
+        <div id="cartItems"></div>
+
+        <div class="cart-bottom">
+            <strong>Jami: <span id="cartTotal">0</span> so'm</strong>
+            <button id="clearCart" class="clear-btn">Savatni tozalash</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Firdavs Shop • HTML • CSS • JavaScript</p>
+</footer>
+
+<script src="script3.js"></script>
+</body>
+</html>

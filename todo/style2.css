@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background: #0b1020;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+}
+
+.todo-box {
+    background: #151c30;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #8d96aa;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 10px;
+
+    background: #222b43;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #8992a5;
+}
+
+#addBtn {
+    border: none;
+
+    padding: 0 20px;
+
+    border-radius: 10px;
+
+    background: #00d9ff;
+
+    color: #071018;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#addBtn:hover {
+    transform: translateY(-2px);
+}
+
+#taskList {
+    list-style: none;
+
+    margin-top: 25px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #1d263d;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    gap: 10px;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    flex: 1;
+}
+
+.task-left input {
+    width: 18px;
+    height: 18px;
+
+    flex: none;
+}
+
+.task-text {
+    font-size: 16px;
+
+    word-break: break-word;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #70798c;
+}
+
+.delete-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #ff5c5c;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.bottom {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #29334c;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+#taskCount {
+    color: #8d96aa;
+}
+
+#clearBtn {
+    border: none;
+
+    background: transparent;
+
+    color: #ff5c5c;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+
+    .todo-box {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    #addBtn {
+        padding: 13px;
+    }
+}
+
